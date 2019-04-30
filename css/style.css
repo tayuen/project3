@@ -31,8 +31,14 @@ body {
  ul{
      font-family: arial,sans-serif;
      text-align: center;
-     list-style-type: square;
+     list-style-type: none;
      list-style-position:inherit;
+	 
+}
+ul li{
+	display: inline;
+	text-decoration: underline overline;
+	padding-left: 10px;
 }
 #rot{
     transform: rotate(90deg);
@@ -42,4 +48,32 @@ body {
      display:inline-block;
      text-align: right;
      padding:6px;
+}
+
+/*media queries*/
+@media screen and (min-width:900px){
+    body{
+        margin: auto;
+        padding: 20px 10px;
+		background-color: red;
+		font-family: "Sans-serif, Times New Roman";
+    }
+	#myName{
+	text-align: right;
+	color: brown;
+}
+	
+}
+
+@media screen and (min-width:900px){
+    #mck{
+		font-size: 40px;
+		color: yellow;
+		font-weight: 700;
+    }
+	h2 {
+     text-align: center;
+	 color: green;
+	 font-style: italic;
+	}
 }
